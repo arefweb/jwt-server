@@ -1,9 +1,8 @@
 
 const app = require("./app");
 
-const port = 5000 || process.env.PORT 
+const port = process.env.PORT || 5050
 
 app.listen(port, (err) => {
-  console.log("server on: localhost:5000");
-  console.log(err);
+  console.log(`server on: localhost:${port}`);
 });
